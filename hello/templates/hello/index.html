@@ -1,12 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
-</head>
-<body>
-    <h1>Hello , world welcome to Django.</h1>
-</body>
-</html>
+{% extends 'hello/layout.html' %}
+{% load static %}
+
+{% block body %}
+    <h1 class="mt-4" style="text-align: center;">Hello , world welcome to <i>Gayheart</i> Django Apps.</h1>
+<div class="container col mt-5">
+    <section class="container col">
+        <div class="modal-content rounded-4 shadow container col" style="width: 50%;">
+            <div class="modal-body p-5">
+              <h2 class="fw-bold mb-0">New year App</h2>
+      
+              <ul class="d-grid gap-4 my-5 list-unstyled small">
+                <li class="d-flex gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="50" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                        <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                        <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                      </svg>
+                  <div>
+                    <h5 class="mb-0">New Year App</h5>
+                    This django application will display YES if it's new year, if it's not it display's NO 
+                    You just have to take my word for it and trust me on that matter 
+                    😂😂😂 
+                  </div>
+                </li>
+              </ul>
+              <a href="{% url 'newyear:newyear' %}">
+                <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Click to see Page</button>
+              </a>
+              
+            </div>
+        </div>
+    </section>
+
+    <section class="container col mt-4 mb-3">
+        <div class="modal-content rounded-4 shadow container col" style="width: 50%;">
+            <div class="modal-body p-5">
+              <h2 class="fw-bold mb-0">Tasks App</h2>
+      
+              <ul class="d-grid gap-4 my-5 list-unstyled small">
+                <li class="d-flex gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="50" fill="currentColor" class="bi bi-journal-check" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                        <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                        <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                      </svg>
+                  <div>
+                    <h5 class="mb-0">Task app</h5>
+                    This django application helps you note down tasks more like a todolist 
+                  </div>
+                </li>
+              </ul>
+              <a href="{% url 'tasks:index' %}">
+                <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Click to try App</button>
+              </a>
+              
+            </div>
+          </div>
+    </section>
+</div>
+{% endblock body %}
