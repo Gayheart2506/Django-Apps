@@ -5,17 +5,17 @@
     <h1 class="mt-4" style="text-align: center;">Hello , world welcome to <i>Gayheart</i> Django Apps.</h1>
 <div class="container col mt-5">
     <section class="container col">
-        <div class="modal-content rounded-4 shadow container col" style="width: 50%;">
+        <div class="modal-content rounded-4 shadow container col">
             <div class="modal-body p-5">
               <h2 class="fw-bold mb-0">New year App</h2>
       
               <ul class="d-grid gap-4 my-5 list-unstyled small">
                 <li class="d-flex gap-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="50" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="60" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
                         <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
                         <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
                       </svg>
-                  <div>
+                  <div style="text-align: justify;">
                     <h5 class="mb-0">New Year App</h5>
                     This django application will display YES if it's new year, if it's not it display's NO 
                     You just have to take my word for it and trust me on that matter 
@@ -24,7 +24,7 @@
                 </li>
               </ul>
               <a href="{% url 'newyear:newyear' %}">
-                <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Click to see Page</button>
+                <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">View Page</button>
               </a>
               
             </div>
@@ -32,8 +32,8 @@
     </section>
 
     <section class="container col mt-4 mb-3">
-        <div class="modal-content rounded-4 shadow container col" style="width: 50%;">
-            <div class="modal-body p-5">
+        <div class="modal-content rounded-4 shadow container col">
+            <div class="modal-body p-5 container col">
               <h2 class="fw-bold mb-0">Tasks App</h2>
       
               <ul class="d-grid gap-4 my-5 list-unstyled small">
@@ -50,7 +50,7 @@
                 </li>
               </ul>
               <a href="{% url 'tasks:index' %}">
-                <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Click to try App</button>
+                <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">View Page</button>
               </a>
               
             </div>
